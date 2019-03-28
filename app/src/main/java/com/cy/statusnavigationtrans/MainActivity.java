@@ -2,13 +2,28 @@ package com.cy.statusnavigationtrans;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
+/**
+ * @ describe 
+ * 
+ * @author lzl
+ *
+ * @ time 2019/3/28 16:38
+ * 
+ * @ param
+ * 
+ * @ return
+ */
 public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ((TextView)findViewById(R.id.textview)).setText(getResources().getIdentifier("timg","drawable","com.cy.statusnavigationtrans")+"");
+
+        findViewById(R.id.activity_main).setBackgroundResource(getResources().getIdentifier("timg","drawable","com.cy.statusnavigationtrans"));
         findViewById(R.id.btn_1).setOnClickListener(this);
         findViewById(R.id.btn_2).setOnClickListener(this);
         findViewById(R.id.btn_3).setOnClickListener(this);
@@ -46,6 +61,7 @@ public class MainActivity extends BaseActivity {
             case R.id.btn_8:
                 startAppcompatActivity(Navigation2Activity.class);
                 break;
+                default:
         }
     }
 }

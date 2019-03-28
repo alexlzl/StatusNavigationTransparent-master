@@ -6,10 +6,18 @@ import android.view.View;
 
 
 
-/**
- * Created by lenovo on 2017/7/4.
- */
 
+/**
+ * @ describe 
+ * 
+ * @author lzl
+ *
+ * @ time 2019/3/27 10:08
+ * 
+ * @ param
+ * 
+ * @ return
+ */
 public class StatusBarView extends View {
     private Context context;
     public StatusBarView(Context context) {

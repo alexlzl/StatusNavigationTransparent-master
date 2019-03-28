@@ -10,7 +10,15 @@ import android.view.WindowManager;
 
 
 /**
- * Created by lenovo on 2017/7/4.
+ * @ describe 
+ * 
+ * @author lzl
+ *
+ * @ time 2019/3/27 10:12
+ * 
+ * @ param
+ * 
+ * @ return
  */
 
 public class ScreenUtils {
@@ -69,9 +77,9 @@ public class ScreenUtils {
         return (int) (dipValue * scale + 0.5f);
     }
 
-    public static int dp2px(Context context, int dimen_resID) {
+    public static int dp2px(Context context, int dimenResID) {
         final float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (context.getResources().getDimension(dimen_resID) * scale + 0.5f);
+        return (int) (context.getResources().getDimension(dimenResID) * scale + 0.5f);
     }
 
     /**
@@ -117,8 +125,10 @@ public class ScreenUtils {
         // MotionEvent event;
         // event.getX(); 获取相对于控件自身左上角的 x 坐标值
         // event.getY(); 获取相对于控件自身左上角的 y 坐标值
-        float x = event.getRawX(); // 获取相对于屏幕左上角的 x 坐标值
-        float y = event.getRawY(); // 获取相对于屏幕左上角的 y 坐标值
+        // 获取相对于屏幕左上角的 x 坐标值
+        float x = event.getRawX();
+        // 获取相对于屏幕左上角的 y 坐标值
+        float y = event.getRawY();
 
         // View view;
         RectF rect = calcViewScreenLocation(view);

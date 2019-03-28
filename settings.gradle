@@ -1,1 +1,1 @@
-include ':app', ':translucentparent'
+include ':app', ':translucentparent', ':demo1'
