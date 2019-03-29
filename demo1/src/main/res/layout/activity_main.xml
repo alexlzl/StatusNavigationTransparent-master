@@ -5,8 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/timg"
+    android:orientation="vertical"
     android:fitsSystemWindows="true"
     tools:context="com.example.demo1.MainActivity">
+    <TextView
+        android:onClick="setClickListener"
+        android:text="getFilesDir"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test1"
+        tools:ignore="OnClick" />
+    <TextView
+        android:onClick="setClickListener1"
+        android:text="getExternalFilesDir"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test5"
+        tools:ignore="OnClick" />
+    <TextView
+        android:text="getCacheDir"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test2"/>
+    <TextView
+        android:text="getExternalFilesDir"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test3"/>
+    <TextView
+        android:text="getExternalCacheDir"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test4"/>
+    <EditText
+        android:background="@color/colorAccent"
+        android:layout_gravity="bottom"
+        android:textColor="@color/colorPrimary"
+        android:hint="test"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
 
     <TextView
         android:layout_width="wrap_content"

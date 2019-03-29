@@ -4,8 +4,10 @@ import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import android.widget.TextView
 
 /**
+ *  https://www.cnblogs.com/zxxiaoxia/p/6857466.html
  *  设置状态栏透明
  *  设置布局全屏
  *  设置fitsSystemWindows为true
@@ -23,5 +25,12 @@ class MainActivity : AppCompatActivity() {
             window.statusBarColor = resources.getColor(android.R.color.transparent)
         }
 
+    }
+
+     fun setClickListener(view:View){
+         ( view  as TextView).text=filesDir.path
+    }
+    fun setClickListener1(view:View){
+        ( view as TextView).text=getExternalFilesDir(android.os.Environment.DIRECTORY_MUSIC).path
     }
 }
